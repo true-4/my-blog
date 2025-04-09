@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./post.html">Posts</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="./table.html">Table</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <form action="contact-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="us-name">Name: </label>
+                <input type="text" id="us-name"><br><br>
+                <label for="us-email">Email: </label>
+                <input type="text" id="us-email"><br><br>
+                <label for="us-age">Age: </label>
+                <input type="text" id="us-age"><br><br>
+                <label for="us-gender">Gender: </label>
+                <select name="gender" id="us-gender">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                </select><br><br>
+                <label for="us-hobb">Hobbies: </label>
+                <input type="text" id="us-hobb"><br><br>
+                <label for="us-bio">Bio: </label>
+                <textarea name="bio" id="us-bio"></textarea><br><br>
+                <label for="myLang">Choose a language: </label>
+                <input list="language" id="myLang" name="myLanguage">
+                    <datalist id="language">
+                        <option value="English"></option>
+                        <option value="Russian"></option>
+                        <option value="Portuguese"></option>
+                        <option value="Moldavian"></option>
+                    </datalist><br><br>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p> &copy; 2024 My Blog. All rights reserved.</p>
+        <aside>
+            Contact me at
+            <a href="http://">example@example.com</a>
+        </aside>
+    </footer>
+</body>
+</html>
