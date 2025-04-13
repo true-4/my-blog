@@ -1,0 +1,55 @@
+:root {
+  --main-color: yellow;
+  --text-color: blue;
+  --base-margin: 200px;
+}
+
+.blok-1 {
+  width: auto;
+  height: 200px;
+  background-color: var(--main-color);
+}
+
+.title {
+  margin: var(--base-margin);
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px gray;
+}
+
+.wrapper {
+  margin: var(--base-margin);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text::first-letter {
+  text-transform: capitalize;
+  font-size: 200%;
+  color: var(--text-color);
+}
+
+.input::placeholder {
+  color: gray;
+}
+
+.input:focus {
+  background-color: green;
+}
+
+.btn::before {
+  content: "☝";
+}
+
+li:first-child {
+  color: blue;
+}
+
+li:last-child {
+  color: green;
+}
+
+li:nth-child(3) {
+  color: red;
+}
